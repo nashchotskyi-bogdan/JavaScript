@@ -40,6 +40,7 @@ console.log("Сезон: " + season);
 
 
 // 3. 
+console.log("\n=== ЗАВДАННЯ 3 ===");
 let number = prompt("Завдання 3: Введіть число:");
 number = Number(number);
 if (number > 0) {
