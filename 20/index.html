@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 20</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="task-section">
+            <h2>1.повідомлення з затримкою</h2>
+            <input type="text" id="messageInput" placeholder="Введіть повідомлення">
+            <input type="number" id="delayInput" placeholder="Час (мс)" value="2000">
+            <button id="showMessageBtn">показати повідомлення</button>
+        </section>
+
+        <section class="task-section">
+            <h2>2.лічильник до 10</h2>
+            <button id="startCounterBtn">запустити лічильник</button>
+            <div id="counterDisplay" class="counter-display">0</div>
+        </section>
+        <section class="task-section">
+            <h2>3.зміна кольору фону</h2>
+            <button id="changeColorBtn">змінити колір фону</button>
+        </section>
+        <section class="task-section">
+            <h2>4.додаткове завдання: таймер</h2>
+            <div class="timer-container">
+                <div class="timer-circle">
+                    <svg class="timer-progress" width="200" height="200">
+                        <circle class="timer-circle-bg" cx="100" cy="100" r="90"></circle>
+                        <circle class="timer-circle-progress" cx="100" cy="100" r="90"></circle>
+                    </svg>
+                    <div class="timer-display" id="timerDisplay">25:00</div>
+                </div>
+                <div class="timer-controls">
+                    <button id="startTimerBtn" class="btn-start">Start</button>
+                    <button id="resetTimerBtn" class="btn-reset">Reset</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
