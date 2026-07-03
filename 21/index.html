@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 21</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">JSON та робота зі сховищами</h1>
+        <section class="task-section" id="task1">
+            <h2>1.SessionStorage</h2>
+            <p class="task-desc">Збережіть текст у sessionStorage та відобразіть його</p>
+            <div class="input-group">
+                <input type="text" id="sessionInput" placeholder="Введіть текст для збереження...">
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-save" id="saveSessionBtn"> Зберегти</button>
+                <button class="btn btn-show" id="showSessionBtn">️ Показати збережене</button>
+                <button class="btn btn-clear" id="clearSessionBtn">Очистити</button>
+            </div>
+            <div class="output-box" id="sessionOutput"></div>
+        </section>
+        <section class="task-section" id="task2">
+            <h2>2.LocalStorage — Налаштування</h2>
+            <p class="task-desc">Налаштуйте вигляд сторінки. Збереження у LocalStorage.</p>
+            <div class="settings-form">
+                <div class="setting-row">
+                    <label for="bgColor">Колір фону:</label>
+                    <input type="color" id="bgColor" value="#1f2937">
+                </div>
+                <div class="setting-row">
+                    <label for="textColor">Колір тексту:</label>
+                    <input type="color" id="textColor" value="#f3f4f6">
+                </div>
+                <div class="setting-row">
+                    <label for="fontSize">Розмір шрифту:</label>
+                    <select id="fontSize">
+                        <option value="14px">Малий (14px)</option>
+                        <option value="16px" selected>Середній (16px)</option>
+                        <option value="18px">Великий (18px)</option>
+                        <option value="20px">Дуже великий (20px)</option>
+                    </select>
+                </div>
+                <div class="setting-row">
+                    <label for="fontFamily">Шрифт:</label>
+                    <select id="fontFamily">
+                        <option value="'Segoe UI', sans-serif">Segoe UI</option>
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-save" id="saveSettingsBtn">Зберегти налаштування</button>
+                <button class="btn btn-clear" id="resetSettingsBtn">Скинути</button>
+            </div>
+            <div class="output-box" id="settingsOutput"></div>
+        </section>
+        <section class="task-section" id="task3">
+            <h2>3.To-Do List (localStorage)</h2>
+            <p class="task-desc">Додавайте та видаляйте завдання. Зберігаються у LocalStorage.</p>
+            <div class="todo-input-group">
+                <input type="text" id="todoInput" placeholder="Нове завдання...">
+                <button class="btn btn-save" id="addTodoBtn">Додати</button>
+            </div>
+            <ul class="todo-list" id="todoList"></ul>
+            <div class="todo-stats" id="todoStats"></div>
+        </section>
+        <section class="task-section" id="task4">
+            <h2>4.JSON.stringify</h2>
+            <p class="task-desc">Створення об'єкта, конвертація у JSON та збереження у файл.</p>
+            <button class="btn btn-save" id="generateJsonBtn">Створити та завантажити JSON</button>
+            <div class="json-preview">
+                <h3>Попередній перегляд JSON:</h3>
+                <pre id="jsonPreview"></pre>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
