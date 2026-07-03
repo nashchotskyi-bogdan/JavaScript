@@ -1,3 +1,33 @@
+// гра
+const userChoice = prompt("Оберіть: камінь, ножиці або папір");
+const choices = ["камінь", "ножиці", "папір"];
+const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+if (userChoice === null) {
+    alert("Гру скасовано.");
+} else {
+    const user = userChoice.toLowerCase().trim();
+    if (!choices.includes(user)) {
+        alert("Некоректний вибір!");
+    } else {
+        let result;
+        if (user === computerChoice) {
+            result = "Нічия!";
+        } else if (
+            (user === "камінь" && computerChoice === "ножиці") ||
+            (user === "ножиці" && computerChoice === "папір") ||
+            (user === "папір" && computerChoice === "камінь")
+        ) {
+            result = "Ви перемогли!";
+        } else {
+            result = "Комп'ютер переміг!";
+        }
+        alert(
+            `Ваш вибір: ${user}\n` +
+            `Вибір комп'ютера: ${computerChoice}\n\n` +
+            `${result}`
+        );
+    }
+}
 // math.min + math.max
 console.log("Math.min + Math.max");
 function getMin(a, b) {
