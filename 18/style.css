@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+h2 {
+    margin-top: 20px;
+}
