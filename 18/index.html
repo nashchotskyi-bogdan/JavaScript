@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Обробка форм</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>1.улюблений колір</h2>
+<label><input type="radio" name="color" value="red"> Червоний</label>
+<label><input type="radio" name="color" value="green"> Зелений</label>
+<label><input type="radio" name="color" value="blue"> Синій</label>
+<hr>
+<h2>2.хобі</h2>
+<label><input type="checkbox" class="hobby" value="Читання"> Читання</label>
+<label><input type="checkbox" class="hobby" value="Спорт"> Спорт</label>
+<label><input type="checkbox" class="hobby" value="Музика"> Музика</label>
+<p id="hobbiesResult"></p>
+<hr>
+<h2>3.країна</h2>
+<select id="countrySelect">
+    <option value="">Оберіть країну</option>
+    <option value="uk">Україна</option>
+    <option value="pl">Польща</option>
+    <option value="de">Німеччина</option>
+</select>
+<p id="countryInfo"></p>
+<hr>
+<h2>4.оцінка сервісу</h2>
+<label><input type="radio" name="rating" value="1">1</label>
+<label><input type="radio" name="rating" value="2">2</label>
+<label><input type="radio" name="rating" value="3">3</label>
+<label><input type="radio" name="rating" value="4">4</label>
+<label><input type="radio" name="rating" value="5">5</label>
+<p id="ratingText"></p>
+<hr>
+<h2>піца калькулятор</h2>
+<select id="pizzaType">
+    <option value="margherita">Маргарита</option>
+    <option value="pepperoni">Пепероні</option>
+</select>
+<br><br>
+<label><input type="radio" name="size" value="0"> Маленька</label>
+<label><input type="radio" name="size" value="50"> Середня (+50)</label>
+<label><input type="radio" name="size" value="100"> Велика (+100)</label>
+<br><br>
+<label><input type="checkbox" value="25"> Сир</label>
+<label><input type="checkbox" value="25"> Гриби</label>
+<label><input type="checkbox" value="25"> Оливки</label>
+<h3>ціна: <span id="price">0</span> грн</h3>
+</body>
+</html>
