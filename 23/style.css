@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+    background:#f4f4f4;
+}
+
+button{
+    padding:10px 20px;
+    margin:10px 0;
+    cursor:pointer;
+}
+
+.card{
+    background:white;
+    border:1px solid gray;
+    padding:15px;
+    margin-top:15px;
+}
+
+a{
+    display:block;
+    margin:3px 0;
+}
